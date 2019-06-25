@@ -59,7 +59,7 @@
         <h1 id="main_header">Hello! my name is Anna Holko</h1>
         <h3> and this is my portfolio.</h3>
     </div>
-    <hr>
+    <hr id="hello-hr">
     <div class="wrapper" id="works_wrapper">
         <h3>Featured Works</h3>
     </div>
@@ -87,16 +87,10 @@
         CAROUSEL
 
 -------------------------->
-<div class="row">
+<div class="row" id=carousel-row>
     <div class="col-md-9">
     <div class="wrapper" id="featured_websites_carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="pics/foltanek.png" alt="First slide">
@@ -138,8 +132,8 @@
         </div>
     </div>
     </div>
-    <div class="col-md-3">
-        <h3>View All Projects<i class="fas fa-chevron-right"></i></h3>
+    <div class="col-md-3" id="all_projects">
+        <button type="button" class="btn btn-primary">View All Projects <i class="fas fa-chevron-right"></i></button>
     
     </div>
     </div>
@@ -149,24 +143,26 @@
       CAROUSEL END
 
 -------------------------->
-
+    <hr>
+    
+<div class="wrapper" id="my_work">
    <h3>My Work</h3>
     <div class="row">
     <div class="col-md">
-        <h6>Why to hire me</h6>
+        <h6>Why hire me <i class="far fa-question-circle"></i></h6>
         <p>
         In years of experience, I contributed to numerous projects that helped clients achieve their goals. I am available for taking on new work. See my contact information below and get in touch.
         </p>
         </div>
         <div class="col-md">
-        <h6>My experience</h6>
+        <h6>My experience <i class="fas fa-code"></i></h6>
             
         <p>
         My skills and specialities include AutoCAD, Fashion Modeling, Pet Styling, 120mm Film, Blogging, and Getting Things Done.
         </p>
         </div>
         <div class="col-md">
-        <h6>Soft Skills</h6>
+        <h6>Soft Skills <i class="fas fa-user-friends"></i></h6>
         <p>
         My portfolio showcases various commercial and personal projects created throughout my career. Subscribe to my site to get updated when I add new stuff.
         </p>
@@ -175,25 +171,19 @@
     <h3>About Me</h3>
     
     <div class="mobile-profile-pic">
-        <img src="pics/profile_pic.jpg">
+        <img src="pics/profile_pic_red_pink.jpg">
         </div>
     <div class="wrapper" id="about-wrapper">
     <div class="col-md-5">
         <div class="desktop-profile-pic">
-            <img src="pics/profile_pic.jpg">
+            <img src="pics/profile_pic_red_pink.jpg">
         </div>
         </div>
-        <div class="col-md-7" id="profile-text"><p>Visitors will want to know the person behind the work. Replace this text and use this section to write a short bio. If you don’t know where to begin, try the questions below.
-
-Why do you do what you do? How did you get started in your field?
-
-What have you done so far? What were the major milestones in your career?
-
-What do you do after work? What are your passions and hobbies? What do you most enjoy talking about?</p>
+        <div class="col-md-7" id="profile-text"><p>I live every day at 100%. I have cheerful, polite and honest personality and I am passionate about everything I do. I am a quick learner with an eye for detail and understanding of needs of other people. I have strong ability to work under pressure for extended period of time and I know how to multitask when needed.</p>
         </div>
     
     </div>
-
+</div>
 </div>
 </body>
 </html>
