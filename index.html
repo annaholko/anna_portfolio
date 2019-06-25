@@ -30,9 +30,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </head>
-    
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" data-options="scrolltop: false">
   <a class="navbar-brand mb-0 h1" href="#">Anna Holko</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -48,18 +47,18 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About Me</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Contact Me</a>
+      <li id="contact_button" class="nav-item">
+        <a class="nav-link" href="#">Contact Me</a>
       </li>
     </ul>
   </div>
 </nav>
 <div class="container">
     <div class="wrapper" id="welcome_wrapper">
-        <h1 id="main_header">Hello! my name is Anna Holko</h1>
+        <h1 id="main_header">Hello!<br>My name is Anna Holko</h1>
         <h3> and this is my portfolio.</h3>
     </div>
-    <hr id="hello-hr">
+    <!--<hr id="hello-hr">-->
     <div class="wrapper" id="works_wrapper">
         <h3>Featured Works</h3>
     </div>
@@ -88,7 +87,7 @@
 
 -------------------------->
 <div class="row" id=carousel-row>
-    <div class="col-md-9">
+    <div class="col-md-12">
     <div class="wrapper" id="featured_websites_carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -132,56 +131,55 @@
         </div>
     </div>
     </div>
-    <div class="col-md-3" id="all_projects">
+    <div class="col-md-12" id="all_projects">
         <button type="button" class="btn btn-primary">View All Projects <i class="fas fa-chevron-right"></i></button>
     
     </div>
-    </div>
+</div>
     
 <!-------------------------
 
       CAROUSEL END
 
 -------------------------->
-    <hr>
-    
+<hr>
+
 <div class="wrapper" id="my_work">
    <h3>My Work</h3>
     <div class="row">
-    <div class="col-md">
-        <h6>Why hire me <i class="far fa-question-circle"></i></h6>
-        <p>
-        In years of experience, I contributed to numerous projects that helped clients achieve their goals. I am available for taking on new work. See my contact information below and get in touch.
-        </p>
+        <div class="col-md">
+            <h6>Why hire me <i class="far fa-question-circle"></i></h6>
+            <p>
+            In years of experience, I contributed to numerous projects that helped clients achieve their goals. I am available for taking on new work. See my contact information below and get in touch.
+            </p>
         </div>
         <div class="col-md">
-        <h6>My experience <i class="fas fa-code"></i></h6>
-            
-        <p>
-        My skills and specialities include AutoCAD, Fashion Modeling, Pet Styling, 120mm Film, Blogging, and Getting Things Done.
-        </p>
+            <h6>My experience <i class="fas fa-code"></i></h6>
+
+            <p>
+            My skills and specialities include AutoCAD, Fashion Modeling, Pet Styling, 120mm Film, Blogging, and Getting Things Done.
+            </p>
         </div>
         <div class="col-md">
-        <h6>Soft Skills <i class="fas fa-user-friends"></i></h6>
-        <p>
-        My portfolio showcases various commercial and personal projects created throughout my career. Subscribe to my site to get updated when I add new stuff.
-        </p>
+            <h6>Soft Skills <i class="fas fa-user-friends"></i></h6>
+            <p>
+            My portfolio showcases various commercial and personal projects created throughout my career. Subscribe to my site to get updated when I add new stuff.
+            </p>
         </div>
     </div>
     <h3>About Me</h3>
     
     <div class="mobile-profile-pic">
-        <img src="pics/profile_pic_red_pink.jpg">
-        </div>
+        <img src="pics/profile_pic_red_pink_vivid.jpg">
+    </div>
     <div class="wrapper" id="about-wrapper">
-    <div class="col-md-5">
-        <div class="desktop-profile-pic">
-            <img src="pics/profile_pic_red_pink.jpg">
-        </div>
+        <div class="col-md-5">
+            <div class="desktop-profile-pic">
+                <img src="pics/profile_pic_red_pink_vivid.jpg">
+            </div>
         </div>
         <div class="col-md-7" id="profile-text"><p>I live every day at 100%. I have cheerful, polite and honest personality and I am passionate about everything I do. I am a quick learner with an eye for detail and understanding of needs of other people. I have strong ability to work under pressure for extended period of time and I know how to multitask when needed.</p>
         </div>
-    
     </div>
 </div>
 </div>
