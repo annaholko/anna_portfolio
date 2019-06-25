@@ -2,9 +2,9 @@
 <html>
 <head>
     
-<title>Sunnys Restaurant and Takeaway</title>
+<title>Anna Holko Portfolio</title>
 
-<!---- meta ---->
+<!---- META ---->
     
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -14,17 +14,186 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<!---- links ---->
+<!---- LINKS ---->
     
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="css/custom.css">
-<link rel="stylesheet" href="https://use.typekit.net/tkd1mnv.css">
+<link rel="stylesheet" href="custom.css">
+<!--
+<link rel="stylesheet" href="https://use.typekit.net/">
+-->
+    
+<!---- JS ---->
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </head>
     
 <body>
-<script src="jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand mb-0 h1" href="#">Anna Holko</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+    <div class="wrapper" id="welcome_wrapper">
+        <h1 id="main_header">Hello! my name is Anna Holko</h1>
+        <h3> and this is my portfolio.</h3>
+    </div>
+    <hr>
+    <div class="wrapper" id="works_wrapper">
+        <h3>Featured Works</h3>
+    </div>
+    <div class="wrapper" id="featured_websites">
+        <div class="row">
+            <div class="col-md">
+                <img src="pics/foltanek.png">
+            </div>
+            <div class="col-md">
+                <img src="pics/tayside.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img src="pics/sunnysbarandkitchen.png">
+            </div>
+            <div class="col-md">
+                <img src="pics/cheesys.png">
+            </div>
+        </div>
+    </div>
+    
+<!-------------------------
+
+        CAROUSEL
+
+-------------------------->
+<div class="row">
+    <div class="col-md-9">
+    <div class="wrapper" id="featured_websites_carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="pics/foltanek.png" alt="First slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Foltanek s.r.o.</h5>
+                        <a href="https://beta.foltanek.cz" target="_blank"><p>view website <i class="fas fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="pics/cheesys.png" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Cheesy's</h5>
+                        <a href="https://https://studentnet.dundeeandangus.ac.uk/~1631842/cheesys_v2/" target="_blank"><p>view website <i class="fas fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="pics/sunnysbarandkitchen.png" alt="Second slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Sunny's Bar and Kitchen</h5>
+                        <a href="https://sunnysbarandkitchen.com" target="_blank"><p>view website <i class="fas fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="pics/tayside.png" alt="Third slide">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Tayside Tourists Resources</h5>
+                        <a href="https://studentnet.dundeeandangus.ac.uk/~1631842/tayside/" target="_blank"><p>view website <i class="fas fa-chevron-right"></i></p></a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <h3>View All Projects<i class="fas fa-chevron-right"></i></h3>
+    
+    </div>
+    </div>
+    
+<!-------------------------
+
+      CAROUSEL END
+
+-------------------------->
+
+   <h3>My Work</h3>
+    <div class="row">
+    <div class="col-md">
+        <h6>Why to hire me</h6>
+        <p>
+        In years of experience, I contributed to numerous projects that helped clients achieve their goals. I am available for taking on new work. See my contact information below and get in touch.
+        </p>
+        </div>
+        <div class="col-md">
+        <h6>My experience</h6>
+            
+        <p>
+        My skills and specialities include AutoCAD, Fashion Modeling, Pet Styling, 120mm Film, Blogging, and Getting Things Done.
+        </p>
+        </div>
+        <div class="col-md">
+        <h6>Soft Skills</h6>
+        <p>
+        My portfolio showcases various commercial and personal projects created throughout my career. Subscribe to my site to get updated when I add new stuff.
+        </p>
+        </div>
+    </div>
+    <h3>About Me</h3>
+    
+    <div class="mobile-profile-pic">
+        <img src="pics/profile_pic.jpg">
+        </div>
+    <div class="wrapper" id="about-wrapper">
+    <div class="col-md-5">
+        <div class="desktop-profile-pic">
+            <img src="pics/profile_pic.jpg">
+        </div>
+        </div>
+        <div class="col-md-7" id="profile-text"><p>Visitors will want to know the person behind the work. Replace this text and use this section to write a short bio. If you don’t know where to begin, try the questions below.
+
+Why do you do what you do? How did you get started in your field?
+
+What have you done so far? What were the major milestones in your career?
+
+What do you do after work? What are your passions and hobbies? What do you most enjoy talking about?</p>
+        </div>
+    
+    </div>
+
+</div>
 </body>
 </html>
