@@ -28,10 +28,18 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+<script>
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});  
+</script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" data-options="scrolltop: false">
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" data-options="scrolltop: false">
   <a class="navbar-brand mb-0 h1" href="#">Anna Holko</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -147,26 +155,26 @@
 <div class="wrapper" id="my_work">
    <h3>My Work</h3>
     <div class="row">
-        <div class="col-md">
-            <h6>Why hire me <i class="far fa-question-circle"></i></h6>
+        <div class="col-md" id="my_work_1">
+            <h5 class="my_work_why">Why hire me <i class="far fa-question-circle"></i></h5>
             <p>
             In years of experience, I contributed to numerous projects that helped clients achieve their goals. I am available for taking on new work. See my contact information below and get in touch.
             </p>
         </div>
-        <div class="col-md">
-            <h6>My experience <i class="fas fa-code"></i></h6>
-
+        <div class="col-md" id="my_work_2">
+            <h5 class="my_work_why">My experience <i class="fas fa-code"></i></h5>
             <p>
             My skills and specialities include AutoCAD, Fashion Modeling, Pet Styling, 120mm Film, Blogging, and Getting Things Done.
             </p>
         </div>
-        <div class="col-md">
-            <h6>Soft Skills <i class="fas fa-user-friends"></i></h6>
+        <div class="col-md" id="my_work_3">
+            <h5 class="my_work_why">Soft Skills <i class="fas fa-user-friends"></i></h5>
             <p>
             My portfolio showcases various commercial and personal projects created throughout my career. Subscribe to my site to get updated when I add new stuff.
             </p>
         </div>
     </div>
+    <hr>
     <h3>About Me</h3>
     
     <div class="mobile-profile-pic">
@@ -175,13 +183,110 @@
     <div class="wrapper" id="about-wrapper">
         <div class="col-md-5">
             <div class="desktop-profile-pic">
-                <img src="pics/profile_pic_red_pink_vivid.jpg">
+                <img src="pics/profile_pic_red_pink.jpg">
             </div>
         </div>
         <div class="col-md-7" id="profile-text"><p>I live every day at 100%. I have cheerful, polite and honest personality and I am passionate about everything I do. I am a quick learner with an eye for detail and understanding of needs of other people. I have strong ability to work under pressure for extended period of time and I know how to multitask when needed.</p>
         </div>
     </div>
+    </div>
+    <!--<hr id="contact_me_hr">-->
+
+    <h3 id="contact_me">Need more information? Contact me!</h3>
+    <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Full Name</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Full Name is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Your Message</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4"></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send Message">
+            </div>
+        </div>
+    </div>
+
+</form>
+    <hr id="footer_hr">
 </div>
-</div>
+<footer>
+        <div class="copyright">
+            <p>© Copyright 2019 Anna Holko <i class="fab fa-linkedin"></i></p> 
+        </div>
+</footer>
+    
+    
+<script type="text/javascript">  
+function ajaxContact(theForm) {
+"use strict";
+var $ = jQuery;
+$('#loader').fadeIn();
+var formData = $(theForm).serialize(),
+note = $('#Note');
+$.ajax({
+type: "POST",
+url: "rsvp-send.php",
+data: formData,
+success: function(response) {
+if ( note.height() ) {			
+note.fadeIn('fast', function() { $(this).hide(); });
+} else {
+note.hide();
+}
+$('#LoadingGraphic').fadeOut('fast', function() {
+$(this).remove();
+if (response === 'success') {
+	
+	$('#RSVPForm').hide();
+	
+}
+// Message Sent? Show the 'Thank You' message and hide the form
+result = '';
+c = '';
+if (response === 'success') { 
+	result = 'Your message has been sent. Thank you!';
+	c = 'success';
+} else {
+	result = response;
+	c = 'error';
+}
+note.removeClass('success').removeClass('error').text('');
+var i = setInterval(function() {
+	if ( !note.is(':visible') ) {
+		note.html(result).addClass(c).slideDown('fast');
+		clearInterval(i);
+	}
+}, 40);    
+}); // end loading image fadeOut
+}
+});
+return false;
+}
+</script>  
 </body>
 </html>
