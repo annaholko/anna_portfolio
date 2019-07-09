@@ -3,9 +3,6 @@
     margin-bottom: 15px;
     transition: 0.2s ease-in-out;
 }
-#baguetteBox-overlay .full-image img{
-    box-shadow: none;
-}
 .tz-gallery .lightbox img:hover {
     transform: scale(1.05);
 }

@@ -328,6 +328,35 @@ footer{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+.card-deck hr{
+    display: none;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 0%;
+}
+.card{
+    margin: 10px;
+}
+.card-body{
+    padding-bottom: 5px;
+}
+.card #header_row{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+a .card-title{
+    color: #212529;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.card-footer{
+    padding: 10px;
+    background-color: transparent!important;
+    border-top: none;
+}
 .gallery img{
     width: 100%;
 }
@@ -351,7 +380,9 @@ footer{
     border: none;
     background-color: transparent!important;
     border-radius: 5px;
-    margin-bottom: 12%;
+    margin-left: 3.5%;
+    margin-top: 3%;
+    margin-bottom: 15px;
     transition: 0.3s;
     transition: ease-in-out;
     background: #FF512F;  /* fallback for old browsers */
@@ -364,24 +395,19 @@ footer{
     font-size: 0.8em;
     margin-left: 1%;
 }
-#header_row .col:last-child{
-    display: flex;
-    justify-content:flex-end;
-    margin-right: 3.5%;
-    padding-left: 0px;
-}
-#header_row .col-4:last-child{
-    display: flex;
-    justify-content:flex-end;
-    margin-right: 0%;
-    padding-right: 0%;
-    padding-left: 3.5%;
-    margin-top: 10px;
+#header_row{
+    flex-direction: column;
 }
 polyline{
     stroke: #212529!important;
     fill: none;
     stroke-linejoin: round;
+}
+.gallery-container{
+    padding:0px;
+}
+.tz-gallery .lightbox img{
+    margin-bottom: 10px!important;
 }
 .back{
     padding-top: 30%;
@@ -392,50 +418,126 @@ polyline{
     font-size: 0.8em;
     color: darkgray;
 }
-
-
-
-
-
-    #welcome_wrapper{
-        padding-top: 20%;
-    }
-    .mobile-profile-pic img{
-        display: none;
-    }
-    #all_projects .btn{
+#welcome_wrapper{
+    padding-top: 20%;
+}
+.mobile-profile-pic img{
+    display: none;
+}
+#all_projects .btn{
+align-self: center;
+margin-bottom: 5%;
+}
+#about-wrapper{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5px;
+}
+.desktop-profile-pic{
+    display: flex;
+}
+.desktop-profile-pic img{
+    width: 150%;
+    margin-left: -70%;
+    margin-top: -35%;
+    padding-left: 0%;
+    border-image-outset: 0.5;
+    border-radius: 5px!important;
+}
+#profile-text{
     align-self: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#profile-text p{
+    font-size: 1.2em;
+}
+#my_work h3{
     margin-bottom: 5%;
 }
-    #about-wrapper{
-        display: flex;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 10%;
-        padding-top: 5%;
-        padding-bottom: 5%;
+#project_row{
+    display: flex;
+    justify-content: space-between;
+}
+#project_row .col-7{
+    padding-right: 0px;
+}
+#project_row .col-4:last-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+@media (min-width:600px){
+    #all_projects_container{
+        padding-top: 15%;
+    }
+    .back{
+    padding-top: 20%;
+    font-size: 1em;
+    color: darkgray;
+    }
+    .back i{
+        font-size: 0.9em;
+        color: darkgray;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .card-deck{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card-deck .card{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #projects_wrapper .row{
+        margin-right: 0px!important;
+        margin-left: 0px!important;    
+    }
+    .visit_website{
+        color: white;
+        border: none;
+        background-color: transparent!important;
         border-radius: 5px;
+        margin-left: 3.5%;
+        margin-top: 8%;
+        margin-bottom: 15px;
+        transition: 0.3s;
+        transition: ease-in-out;
+        background: #FF512F;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: ease-in-out 0.15s;
+        box-shadow: 0 12px 20px -12px #f3434ad6;
     }
-    .desktop-profile-pic{
+    #project_row .col-7, #project_row .col-4{
+        padding: 0px;
+    }
+    #project_row .col-4:last-child{
         display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        height: 50px;
+        margin-right: 0px;
     }
-    .desktop-profile-pic img{
-        width: 150%;
-        margin-left: -70%;
-        margin-top: -35%;
-        padding-left: 0%;
-        border-image-outset: 0.5;
-        border-radius: 5px!important;
+}
+@media (min-width:992px){
+    .col-lg{
+        height: 500px!important;
     }
-    #profile-text{
-        align-self: center;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #profile-text p{
-        font-size: 1.2em;
-    }
-    #my_work h3{
-        margin-bottom: 5%;
-    }
+    
+
 }
