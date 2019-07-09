@@ -1,5 +1,5 @@
 ::selection {
-    background-color: #ef3955;
+    background-color: #dfdfdfb8;
 }
 
 body{
@@ -153,7 +153,6 @@ h3{
 }
 #all_projects button:hover{
     opacity: 0.8;
-    
 }
 #all_projects i{
     font-size: 0.8em;
@@ -357,6 +356,10 @@ a:hover{
     background-color: transparent!important;
     border-top: none;
 }
+.card-footer .btn-primary:hover{
+    opacity: 0.8
+
+}
 .gallery img{
     width: 100%;
 }
@@ -374,7 +377,12 @@ a:hover{
 .project_img:hover {
     opacity: 0.5;
 }
-
+.visit_website .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle:active{
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+}
 .visit_website{
     color: white;
     border: none;
@@ -534,10 +542,6 @@ margin-bottom: 5%;
         margin-right: 0px;
     }
 }
-@media (min-width:992px){
-    .col-lg{
-        height: 500px!important;
-    }
-    
+@media (min-width:1280px)/* hi-res laptops and desktops */{
 
 }

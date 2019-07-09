@@ -1,5 +1,5 @@
 ::selection {
-    background-color: #ef3955;
+    background-color: #dfdfdfb8;
 }
 
 body{
@@ -170,6 +170,9 @@ h3{
 .carousel-caption h5:after{
     height: 1px;
 }
+.carousel-indicator{
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
 .carousel-indicators {
     margin-bottom: 40%;
 }
@@ -178,10 +181,15 @@ h3{
     height: 2px;
 }
 .carousel-control-prev-icon{
-    margin-bottom: 180%!important;
+    margin-bottom: 80%!important;
+    text-shadow: 0 0 10px black;
 }
 .carousel-control-next-icon{
-    margin-bottom: 180%!important;
+    margin-bottom: 80%!important;
+}
+.carousel-control{
+    text-shadow: 15px 13px black!improtant;
+    
 }
 #all_projects{
     display: flex;
@@ -216,7 +224,6 @@ h3{
 }
 #all_projects button:hover{
     opacity: 0.8;
-    
 }
 #all_projects i{
     font-size: 0.8em;
