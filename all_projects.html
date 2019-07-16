@@ -22,6 +22,15 @@
 <!--
 <link rel="stylesheet" href="https://use.typekit.net/">
 -->
+
+<!---- FAVICON ---->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#ef3955">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
     
 <!---- JS ---->
     
@@ -29,26 +38,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/scroll_change_color.js"></script>
+<script src="js/atag.js"></script>
     
 </head>
 <body>
     
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" data-options="scrolltop: false">
     <div class="container">
-  <a class="navbar-brand mb-0 h1" href="index.html"><img src="pics/" class="logo"></a>
+  <a class="navbar-brand mb-0 h1" href="index.html"><img src="pics/pixel.png" class="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="all_projects.html">My Works</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="all_projects.html">My Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:54444/index.html#about_me" >About Me</a>
+        <a class="nav-link atag" href="http://annaholko.com/#about_me" >About Me</a>
       </li>
       <li id="contact_button" class="nav-item">
         <a class="nav-link" href="#contact_me">Contact Me</a>
@@ -60,7 +70,7 @@
 <div class="container" id="all_projects_container">
     <div class="wrapper" id="projects_wrapper">
         <h3 id="main_header"><span class="underline">All projects</span></h3>
-        <p>Have a look on everything that I've worked on for the past few years. From designs to fully functioning websites <i class="fas fa-chevron-down"></i></p>
+        <p>Have a look on everything that I've worked on for the past few years. From designs to fully functioning websites.<!--<i class="fas fa-chevron-down"></i>--></p>
     </div>   
     <div class="gallery">
         <div class="row">  
@@ -78,7 +88,7 @@
                     <p class="card-text">Geodesy company that had to be redesigned and developed to meet the new standards. <br>Created new logo and interface of the site to be simple but appealing and coded to be quick on the go.</p>
                 </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/foltanek.png" alt="Card image cap">
+                        <a href="foltanek.html"><img class="card-img-bottom" src="pics/foltanek.png" alt="Card image cap"></a>
                         <a href="foltanek.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
                 <hr>
@@ -96,7 +106,7 @@
                             <p class="card-text">Restaurant with established brand have asked me to create a website to be more recognisable and have essential information on the site</p>
                     </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/sunnysbarandkitchen.png" alt="Card image cap">
+                        <a href="sunnys.html"><img class="card-img-bottom" src="pics/sunnysbarandkitchen.png" alt="Card image cap"></a>
                         <a href="sunnys.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
                     <hr>
@@ -114,7 +124,7 @@
                     <p class="card-text">Winning Webathlon (Web Hackathlon) project with a 24 hours of time. Brief was to create fun Mac and Cheese restaurant website.</p>
                 </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/foltanek.png" alt="Card image cap">
+                        <a href="cheesys.html"><img class="card-img-bottom" src="pics/cheesys.png" alt="Card image cap"></a>
                         <a href="cheesys.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
                 <hr>
@@ -136,7 +146,7 @@
                             <p class="card-text">Created for my own wedding as an invitation for the guests instead of sending wedding cards.</p>
                     </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/wedding.png" alt="Card image cap">
+                        <a href="wedding.html"><img class="card-img-bottom" src="pics/wedding.png" alt="Card image cap"></a>
                         <a href="wedding.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
                     <hr>
@@ -154,7 +164,7 @@
                         <p class="card-text">Created as a student project to cover design aspects. Functioning home page with focus on design, logo and style guide</p>
                     </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/golf.png" alt="Card image cap">
+                        <a href="golf.html"><img class="card-img-bottom" src="pics/golf.png" alt="Card image cap"></a>
                         <a href="golf.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
                     <hr>
@@ -172,7 +182,7 @@
                         <p class="card-text">One of my first student projects. Created as a learning path for raw HTML and CSS</p>
                     </div>
                     <div class="card-footer">
-                        <img class="card-img-bottom" src="pics/tayside.png" alt="Card image cap">
+                        <a href="tayside.html"><img class="card-img-bottom" src="pics/tayside.png" alt="Card image cap"></a>
                         <a href="tayside.html"><button type="button" class="btn btn-primary visit_website">More Info <i class="fas fa-chevron-right"></i></button></a>
                     </div>
             </div>
@@ -184,13 +194,15 @@
 
 
     <h3 id="contact_me"><span class="underline">Need more information? Contact me!</span></h3>
+    <div class="row">
+        <div class="col-md-8">
     <form id="contact-form" method="post" action="contact.php" role="form">
 
     <div class="messages"></div>
 
     <div class="controls">
 
-        <div class="row">
+        <div class="row" id="contact-row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="form_name">Full Name</label>
@@ -223,6 +235,18 @@
     </div>
 
 </form>
+        </div>
+        <div class="col-md-4" id="email">
+            <div class="email_wrapper">
+           <h3><span class="underline">Don't like forms?</span><br><span id="shh">(Me neither, shhhh...)</span></h3>
+            <p>Send me an email <i class="fas fa-angle-down"></i></p>
+            <p><a href="mailto:holko.ani@gmail.com">holko.ani@gmail.com</a></p>
+            </div>
+            <div class="email_image_wrapper">
+            <img src="pics/envelope_grey_thin.png">
+            </div>
+        </div>
+    </div>
     <hr id="footer_hr">
 </div>
 <footer>
@@ -279,7 +303,12 @@ var i = setInterval(function() {
 return false;
 }
 </script>
-
+<script>
+    $('.nav-item').click(function(){
+    $('.nav-item').removeClass('active');
+    $(this).addClass('active');
+})
+</script>
 
 </body>
 </html>

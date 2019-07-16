@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<style>
+    body{
+        font-size: 2em;
+    }
+
+    
+</style>
+</body>
+</html>
 <?php
 /*
  *  CONFIGURE EVERYTHING HERE
